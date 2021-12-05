@@ -11,7 +11,33 @@ import CoreData
 struct ContentView: View {
 
     var body: some View {
-        VStack(alignment: .center) {
+        VStack {
+            Group {
+                // MARK: LOGIN VIEW
+                // TODO: FIX USER NAME !
+                VStack {
+                    Text("Hello")
+                        .font(.headline)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.black)
+                        .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
+                }.frame(width: 200, height: 200, alignment: .center).background(Color("color_scheme"))
+            }
+            Group {
+                //MARK: REGISTER VIEW
+                VStack {
+                    Image(systemName: /*@START_MENU_TOKEN@*/"cloud.drizzle"/*@END_MENU_TOKEN@*/).foregroundColor(.indigo)
+                    Text("Hello 2")
+                        .font(.footnote)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(hue: 0.583, saturation: 1.0, brightness: 0.498))
+                }
+            }
+        }
+    }
+
+    fileprivate func demoView() -> some View {
+        return VStack(alignment: .center) {
             Rectangle().frame(width: 100, height: 100, alignment: .center).foregroundColor(.indigo)
             Circle().foregroundColor(.blue).frame(width: 100, height: 100, alignment: .center)
             Text("Sample 1")
