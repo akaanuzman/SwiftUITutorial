@@ -11,7 +11,25 @@ import CoreData
 struct ContentView: View {
 
     var body: some View {
-        sampleStackView()
+        VStack(alignment: .center) {
+            Rectangle().frame(width: 100, height: 100, alignment: .center).foregroundColor(.indigo)
+            Circle().foregroundColor(.blue).frame(width: 100, height: 100, alignment: .center)
+            Text("Sample 1")
+            Text("Sample 2")
+            Text("Sample 3")
+            Spacer()
+            HStack {
+                RoundedRectangle(cornerRadius: 50).frame(height: 100)
+                ZStack {
+                    Circle()
+                    Text("Hello")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.orange)
+                }.frame(height: 100, alignment: .center)
+            }.frame(height: 250, alignment: .top)
+
+        }
     }
 
     fileprivate func sampleHorizontalView() -> some View {
@@ -41,7 +59,7 @@ struct ContentView: View {
     fileprivate func sampleStackView() -> some View {
         return ZStack(alignment: Alignment.top) {
             Spacer().frame(width: 50)
-            Color.red
+            Color.green
             Text("Kaan Uzman1")
             Text("Kaan Uzman  2")
             Text("Kaan Uzman   3")
