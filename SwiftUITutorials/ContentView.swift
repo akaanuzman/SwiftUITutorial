@@ -8,16 +8,37 @@
 import SwiftUI
 import CoreData
 
+struct IconFieldView: View {
+    var iconName: String = "hello"
+    @State var textFieldValue: String = ""
+    
+    var body: some View{
+        VStack{
+            TextField("Placeholder", text: $textFieldValue)
+            Text(textFieldValue)
+                .font(.headline)
+                .fontWeight(.bold)
+            Image(systemName: textFieldValue.lowercased()).frame(width: 100, height: 100, alignment: .center)
+        }
+    }
+    
+}
+
 struct ContentView: View {
 
+    
     var body: some View {
-        VStack {
+        groupView()
+    }
+    
+    fileprivate func groupView() -> some View {
+        return VStack {
             Group {
                 // MARK: LOGIN VIEW
                 // TODO: FIX USER NAME !
                 VStack {
                     Text("Hello")
-                        .font(.headline)
+                        .font(.largeTitle)
                         .fontWeight(.heavy)
                         .foregroundColor(Color.black)
                         .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
@@ -26,7 +47,7 @@ struct ContentView: View {
             Group {
                 //MARK: REGISTER VIEW
                 VStack {
-                    Image(systemName: /*@START_MENU_TOKEN@*/"cloud.drizzle"/*@END_MENU_TOKEN@*/).foregroundColor(.indigo)
+                    Image(systemName: "cloud.drizzle").foregroundColor(.indigo)
                     Text("Hello 2")
                         .font(.footnote)
                         .fontWeight(.bold)
@@ -97,5 +118,5 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View { ContentView() }
+    static var previews: some View { IconFieldView() }
 }
