@@ -18,6 +18,7 @@
 		004A3274275C28530046BB63 /* SwiftUITutorialsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A3273275C28530046BB63 /* SwiftUITutorialsUITestsLaunchTests.swift */; };
 		00CE87FE2761579E0097BBFD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00CE87FD2761579E0097BBFD /* Kingfisher */; };
 		00CE8803276159BE0097BBFD /* CircleImageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE8802276159BE0097BBFD /* CircleImageTextView.swift */; };
+		00E373BD276161D80077D0FF /* SampleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E373BC276161D80077D0FF /* SampleListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		004A3271275C28530046BB63 /* SwiftUITutorialsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsUITests.swift; sourceTree = "<group>"; };
 		004A3273275C28530046BB63 /* SwiftUITutorialsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		00CE8802276159BE0097BBFD /* CircleImageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageTextView.swift; sourceTree = "<group>"; };
+		00E373BC276161D80077D0FF /* SampleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		004A3250275C28520046BB63 /* SwiftUITutorials */ = {
 			isa = PBXGroup;
 			children = (
+				00E373BA276161B30077D0FF /* Features */,
 				00CE88002761598E0097BBFD /* View */,
 				004A3251275C28520046BB63 /* SwiftUITutorialsApp.swift */,
 				004A3253275C28520046BB63 /* ContentView.swift */,
@@ -152,6 +155,14 @@
 				00CE8802276159BE0097BBFD /* CircleImageTextView.swift */,
 			);
 			path = Circle;
+			sourceTree = "<group>";
+		};
+		00E373BA276161B30077D0FF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				00E373BC276161D80077D0FF /* SampleListView.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				004A3254275C28520046BB63 /* ContentView.swift in Sources */,
 				004A3252275C28520046BB63 /* SwiftUITutorialsApp.swift in Sources */,
 				004A325E275C28530046BB63 /* SwiftUITutorials.xcdatamodeld in Sources */,
+				00E373BD276161D80077D0FF /* SampleListView.swift in Sources */,
 				00CE8803276159BE0097BBFD /* CircleImageTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
