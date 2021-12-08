@@ -16,6 +16,8 @@
 		004A3268275C28530046BB63 /* SwiftUITutorialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A3267275C28530046BB63 /* SwiftUITutorialsTests.swift */; };
 		004A3272275C28530046BB63 /* SwiftUITutorialsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A3271275C28530046BB63 /* SwiftUITutorialsUITests.swift */; };
 		004A3274275C28530046BB63 /* SwiftUITutorialsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A3273275C28530046BB63 /* SwiftUITutorialsUITestsLaunchTests.swift */; };
+		00CE87FE2761579E0097BBFD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00CE87FD2761579E0097BBFD /* Kingfisher */; };
+		00CE8803276159BE0097BBFD /* CircleImageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE8802276159BE0097BBFD /* CircleImageTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		004A326D275C28530046BB63 /* SwiftUITutorialsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITutorialsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		004A3271275C28530046BB63 /* SwiftUITutorialsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsUITests.swift; sourceTree = "<group>"; };
 		004A3273275C28530046BB63 /* SwiftUITutorialsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00CE8802276159BE0097BBFD /* CircleImageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CE87FE2761579E0097BBFD /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +102,7 @@
 		004A3250275C28520046BB63 /* SwiftUITutorials */ = {
 			isa = PBXGroup;
 			children = (
+				00CE88002761598E0097BBFD /* View */,
 				004A3251275C28520046BB63 /* SwiftUITutorialsApp.swift */,
 				004A3253275C28520046BB63 /* ContentView.swift */,
 				004A3255275C28530046BB63 /* Assets.xcassets */,
@@ -133,6 +138,22 @@
 			path = SwiftUITutorialsUITests;
 			sourceTree = "<group>";
 		};
+		00CE88002761598E0097BBFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00CE8801276159960097BBFD /* Circle */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00CE8801276159960097BBFD /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				00CE8802276159BE0097BBFD /* CircleImageTextView.swift */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +170,9 @@
 			dependencies = (
 			);
 			name = SwiftUITutorials;
+			packageProductDependencies = (
+				00CE87FD2761579E0097BBFD /* Kingfisher */,
+			);
 			productName = SwiftUITutorials;
 			productReference = 004A324E275C28520046BB63 /* SwiftUITutorials.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +245,9 @@
 				Base,
 			);
 			mainGroup = 004A3245275C28520046BB63;
+			packageReferences = (
+				00CE87FC2761579E0097BBFD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 004A324F275C28520046BB63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,6 +294,7 @@
 				004A3254275C28520046BB63 /* ContentView.swift in Sources */,
 				004A3252275C28520046BB63 /* SwiftUITutorialsApp.swift in Sources */,
 				004A325E275C28530046BB63 /* SwiftUITutorials.xcdatamodeld in Sources */,
+				00CE8803276159BE0097BBFD /* CircleImageTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +635,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00CE87FC2761579E0097BBFD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00CE87FD2761579E0097BBFD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CE87FC2761579E0097BBFD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		004A325C275C28530046BB63 /* SwiftUITutorials.xcdatamodeld */ = {

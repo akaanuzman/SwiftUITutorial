@@ -11,9 +11,9 @@ import CoreData
 struct IconFieldView: View {
     var iconName: String = "hello"
     @State var textFieldValue: String = ""
-    
-    var body: some View{
-        VStack{
+
+    var body: some View {
+        VStack {
             TextField("Placeholder", text: $textFieldValue)
             Text(textFieldValue)
                 .font(.headline)
@@ -21,16 +21,18 @@ struct IconFieldView: View {
             Image(systemName: textFieldValue.lowercased()).frame(width: 100, height: 100, alignment: .center)
         }
     }
-    
+
 }
 
 struct ContentView: View {
 
-    
+
     var body: some View {
-        groupView()
+        let imageUrl : String = "https://picsum.photos/200"
+        let imageText = "Home Text"
+        CircleImageTextView(imageUrl: imageUrl, imageText: imageText)
     }
-    
+
     fileprivate func groupView() -> some View {
         return VStack {
             Group {
@@ -118,5 +120,5 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View { IconFieldView() }
+    static var previews: some View { ContentView()}
 }
