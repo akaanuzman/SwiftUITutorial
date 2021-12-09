@@ -28,7 +28,7 @@ struct ContentView: View {
 
 
     var body: some View {
-        let imageUrl : String = "https://picsum.photos/200"
+        let imageUrl: String = "https://picsum.photos/200"
         let imageText = "Home Text"
         CircleImageTextView(imageUrl: imageUrl, imageText: imageText)
     }
@@ -120,5 +120,5 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View { ContentView()}
+    static var previews: some View { ContentView() }
 }
