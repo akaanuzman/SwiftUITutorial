@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002FD5452774F6BE0095A412 /* CustomTabIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002FD5442774F6BE0095A412 /* CustomTabIndex.swift */; };
 		004A3252275C28520046BB63 /* SwiftUITutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A3251275C28520046BB63 /* SwiftUITutorialsApp.swift */; };
 		004A3254275C28520046BB63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A3253275C28520046BB63 /* ContentView.swift */; };
 		004A3256275C28530046BB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004A3255275C28530046BB63 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 		004A3268275C28530046BB63 /* SwiftUITutorialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A3267275C28530046BB63 /* SwiftUITutorialsTests.swift */; };
 		004A3272275C28530046BB63 /* SwiftUITutorialsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A3271275C28530046BB63 /* SwiftUITutorialsUITests.swift */; };
 		004A3274275C28530046BB63 /* SwiftUITutorialsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A3273275C28530046BB63 /* SwiftUITutorialsUITestsLaunchTests.swift */; };
+		007296EB2774F3D700B48571 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007296EA2774F3D700B48571 /* CustomTabView.swift */; };
 		00CE87FE2761579E0097BBFD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00CE87FD2761579E0097BBFD /* Kingfisher */; };
 		00CE8803276159BE0097BBFD /* CircleImageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CE8802276159BE0097BBFD /* CircleImageTextView.swift */; };
 		00E0DAFA2762AC0F00F5C02C /* TweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0DAF92762AC0F00F5C02C /* TweetModel.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002FD5442774F6BE0095A412 /* CustomTabIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndex.swift; sourceTree = "<group>"; };
 		004A324E275C28520046BB63 /* SwiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004A3251275C28520046BB63 /* SwiftUITutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsApp.swift; sourceTree = "<group>"; };
 		004A3253275C28520046BB63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		004A326D275C28530046BB63 /* SwiftUITutorialsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITutorialsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		004A3271275C28530046BB63 /* SwiftUITutorialsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsUITests.swift; sourceTree = "<group>"; };
 		004A3273275C28530046BB63 /* SwiftUITutorialsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		007296EA2774F3D700B48571 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		00CE8802276159BE0097BBFD /* CircleImageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageTextView.swift; sourceTree = "<group>"; };
 		00E0DAF92762AC0F00F5C02C /* TweetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetModel.swift; sourceTree = "<group>"; };
 		00E0DAFB2762ACF600F5C02C /* ModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelListView.swift; sourceTree = "<group>"; };
@@ -153,6 +157,15 @@
 			path = SwiftUITutorialsUITests;
 			sourceTree = "<group>";
 		};
+		007296E92774F3AE00B48571 /* CustomTabView */ = {
+			isa = PBXGroup;
+			children = (
+				007296EA2774F3D700B48571 /* CustomTabView.swift */,
+				002FD5442774F6BE0095A412 /* CustomTabIndex.swift */,
+			);
+			path = CustomTabView;
+			sourceTree = "<group>";
+		};
 		00CE88002761598E0097BBFD /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +205,7 @@
 		00E373BA276161B30077D0FF /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				007296E92774F3AE00B48571 /* CustomTabView */,
 				00E0DAFF2762B68500F5C02C /* Navigation */,
 				00E0DAF82762ABF700F5C02C /* ModelList */,
 				00E373BC276161D80077D0FF /* SampleListView.swift */,
@@ -340,11 +354,13 @@
 				004A3254275C28520046BB63 /* ContentView.swift in Sources */,
 				00E0DAFE2762AFBA00F5C02C /* TweetCard.swift in Sources */,
 				00E0DB052762B9A800F5C02C /* UserViewDetail.swift in Sources */,
+				007296EB2774F3D700B48571 /* CustomTabView.swift in Sources */,
 				00E0DAFA2762AC0F00F5C02C /* TweetModel.swift in Sources */,
 				00E0DB012762B6A300F5C02C /* NavigationUserModel.swift in Sources */,
 				004A3252275C28520046BB63 /* SwiftUITutorialsApp.swift in Sources */,
 				004A325E275C28530046BB63 /* SwiftUITutorials.xcdatamodeld in Sources */,
 				00E373BD276161D80077D0FF /* SampleListView.swift in Sources */,
+				002FD5452774F6BE0095A412 /* CustomTabIndex.swift in Sources */,
 				00E0DAFC2762ACF600F5C02C /* ModelListView.swift in Sources */,
 				00CE8803276159BE0097BBFD /* CircleImageTextView.swift in Sources */,
 			);
