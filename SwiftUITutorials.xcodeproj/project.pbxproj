@@ -123,7 +123,6 @@
 				00E373BA276161B30077D0FF /* Features */,
 				00CE88002761598E0097BBFD /* View */,
 				004A3251275C28520046BB63 /* SwiftUITutorialsApp.swift */,
-				004A3253275C28520046BB63 /* ContentView.swift */,
 				004A3255275C28530046BB63 /* Assets.xcassets */,
 				004A325A275C28530046BB63 /* Persistence.swift */,
 				004A325C275C28530046BB63 /* SwiftUITutorials.xcdatamodeld */,
@@ -169,6 +168,7 @@
 		00CE88002761598E0097BBFD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				004A3253275C28520046BB63 /* ContentView.swift */,
 				00CE8801276159960097BBFD /* Circle */,
 			);
 			path = View;
